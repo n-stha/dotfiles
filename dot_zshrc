@@ -61,7 +61,7 @@ setopt hist_ignore_dups
 alias pmi="sudo pacman -S"
 alias pmr="sudo pacman -Rns"
 
-alias ls="exa"
+alias ls="eza"
 alias grep="rg"
 alias cat="bat --theme Dracula"
 # if type rg &> /dev/null; then
