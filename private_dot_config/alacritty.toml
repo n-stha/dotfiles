@@ -1,0 +1,62 @@
+
+live_config_reload = true
+
+[window]
+decorations = "None"
+startup_mode = "Maximized"
+
+[scrolling]
+history = 20000
+multiplier = 5
+
+[font]
+normal = {family = "JetBrainsMono NF", style = "Regular"}
+size = 11
+
+[cursor]
+style = { shape = "Beam", blinking = "On"}
+blink_interval = 696
+blink_timeout = 3
+unfocused_hollow = false
+thickness = 0.2
+
+[mouse]
+hide_when_typing = true
+
+[keyboard]
+bindings = [
+  # Open a new instance in cwd 
+  { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" }
+]
+
+# Colors (Hyper)
+# Default colors
+[colors.primary]
+background = '#000000'
+foreground = '#ffffff'
+
+[colors.cursor]
+text = '#F81CE5'
+cursor = '#ffffff'
+
+# Normal colors
+[colors.normal]
+black   = '#000000'
+red     = '#fe0100'
+green   = '#33ff00'
+yellow  = '#feff00'
+blue    = '#0066ff'
+magenta = '#cc00ff'
+cyan    = '#00ffff'
+white   = '#d0d0d0'
+
+# Bright colors
+[colors.bright]
+black   = '#808080'
+red     = '#fe0100'
+green   = '#33ff00'
+yellow  = '#feff00'
+blue    = '#0066ff'
+magenta = '#cc00ff'
+cyan    = '#00ffff'
+white   = '#FFFFFF'
