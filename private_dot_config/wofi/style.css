@@ -1,0 +1,30 @@
+* {
+  border-radius: 15px;
+  border: none;
+}
+
+window {
+  font-size: 16px;
+  font-family: JetBrainsMono NF;
+  background: linear-gradient(90deg, black, rgba(50, 0, 93, 1));
+  color: rgba(102, 56, 143, 0.77);
+  border: 1px solid purple;
+}
+
+#input {
+  background-color: rgba(19, 19, 19, 0.69);
+  color: whitesmoke;
+  border: 1px solid purple;
+  box-shadow: none;
+}
+
+#entry:selected {
+  background: linear-gradient(90deg, rgba(51, 0, 93, 1), black);
+  border: 2px solid purple;
+  margin: 5px;
+  box-shadow: none;
+}
+
+#img {
+  padding: 8px;
+}
