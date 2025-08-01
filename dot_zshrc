@@ -5,8 +5,8 @@
 # If not running interactively, don't do anything
  [[ $- != *i* ]] && return
 # PS1='[\u@\h \W]\$ '
-. "$HOME/.local/bin"
-. "$HOME/.cargo/env"
+# . "$HOME/.local/bin"
+# . "$HOME/.cargo/env"
 
 # ### Added by Zinit's installer
 # if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
@@ -58,21 +58,30 @@ setopt hist_ignore_dups
 #
 #
 #Shortcut Aliases
-alias pmi="sudo pacman -Syu"
+alias pmi="sudo pacman -S"
 alias pmr="sudo pacman -Rns"
+alias pmu="sudo pacman -Syu"
+alias pms="pacman -Ss"
+alias pmq="pacman -Q --info"
+alias pmcc="sudo pacman -Scc"
 
 alias ls="eza"
 alias grep="rg"
 alias cat="bat --theme Dracula"
-# if type rg &> /dev/null; then
-#     export FZF_DEFAULT_COMMAND='rg --files'
-# fi"
-
-react() {
-  npm create vite@latest "$1" -- --template react
-} 
+if type rg &> /dev/null; then
+  export FZF_DEFAULT_COMMAND='rg --files'
+fi"
 
 eval "$(starship init zsh)"
 eval "$(fzf --zsh)"
 pokemon-colorscripts -r --no-title
+
+
+# pnpm
+export PNPM_HOME="/home/ns/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
 
