@@ -70,7 +70,7 @@ alias grep="rg"
 alias cat="bat --theme Dracula"
 if type rg &> /dev/null; then
   export FZF_DEFAULT_COMMAND='rg --files'
-fi"
+fi
 
 eval "$(starship init zsh)"
 eval "$(fzf --zsh)"
