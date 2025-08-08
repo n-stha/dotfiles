@@ -1,0 +1,116 @@
+* {
+  font-family: "FiraCode Nerd Font", "Font Awesome 7 Free", "Font Awesome 7 Free Solid";
+  font-size: 14px;
+  border-radius: 0;
+  min-height: 0;
+  border: none;
+  font-weight: bold;
+}
+
+#workspaces{
+  background-color: rgba(0,0,0,0);
+  box-shadow: none;
+}
+
+#waybar {
+  background-color: #282828;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+#window,
+#clock,
+#battery,
+#wireplumber,
+#power-profiles-daemon,
+#memory,
+#cpu,
+#network{
+  border-radius: 4px;
+  margin: 1px 4px;
+  padding: 4px 4px;
+  background-color: #282828;
+  color: #ebdbb2;
+}
+
+#network {
+  border: 2px solid #928374;
+  border-top: none;
+}
+#battery {
+  border: 2px solid #d3869b;
+  border-top: none;
+}
+#wireplumber {
+  border: 2px solid #83a598;
+  border-top: none;
+}
+#power-profiles-daemon {
+  border: 2px solid #b8bb26;
+  border-top: none;
+}
+#memory {
+  border: 2px solid #fb4934;
+  border-top: none;
+}
+#cpu {
+  border: 2px solid #d79921;
+  border-top: none;
+}
+#clock {
+  border: 2px solid #b16286;
+  border-top: none;
+}
+#window{
+  border: 2px solid #458588;
+  border-top: none;
+}
+
+#waybar.empty #window{
+  background-color: rgba(0,0,0,0);
+  border: none;
+}
+
+#waybar.hidden {
+  opacity: 0.5;
+}
+
+#workspaces button {
+  all: initial;
+  /* Remove GTK theme values (waybar #1351) */
+  min-width: 0;
+  /* Fix weird spacing in materia (waybar #450) */
+  box-shadow: inset 0 -3px transparent;
+  /* Use box-shadow instead of border so the text isn't offset */
+  padding: 2px 4px;
+  margin: 4px 2px;
+  border-radius: 4px;
+  background-color: #282828;
+  color: #ebdbb2;
+}
+
+#workspaces button.active {
+  color: #282828;
+  background-color: #ebdbb2;
+}
+
+#workspaces button:hover {
+  box-shadow: inherit;
+  text-shadow: inherit;
+  color: #282828;
+  background-color: #ebdbb2;
+}
+
+tooltip {
+  border-radius: 8px;
+  padding: 40px;
+  background-color: #282828;
+  color: #ebdbb2;
+  border: 1px dashed #ebdbb2;
+}
+
+tooltip label {
+  padding: 2px;
+  background-color: #282828;
+  color: #ebdbb2;
+}
