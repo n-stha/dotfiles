@@ -1,8 +1,9 @@
 [global]
-    font = "Hack 8"
+    font = "FiraCode Nerd Font"
     allow_markup = yes
     format = "<b>%s</b>\n%b"
     sort = yes
+    origin = top-center
     indicate_hidden = yes
     alignment = center
     bounce_freq = 0
@@ -25,12 +26,6 @@
 [frame]
     width = 1
     color = "#83a598"
-
-[shortcuts]
-    close = ctrl+space
-    close_all = ctrl+shift+space
-    history = ctrl+grave
-    context = ctrl+shift+period
 
 [urgency_low]
     background = "#282828"
