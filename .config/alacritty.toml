@@ -1,9 +1,7 @@
 [general]
 
 live_config_reload = true
-import = [
-    "~/.config/alacritty/themes/themes/gruvbox_dark.toml"
-]
+import = ["~/.config/alacritty/themes/themes/hyper.toml"]
 
 
 [window]
@@ -15,11 +13,11 @@ history = 20000
 multiplier = 5
 
 [font]
-normal = {family = "FiraCode Nerd Font", style = "Regular"}
+normal = { family = "FiraCode Nerd Font", style = "Regular" }
 size = 11
 
 [cursor]
-style = { shape = "Beam", blinking = "On"}
+style = { shape = "Beam", blinking = "On" }
 blink_interval = 696
 blink_timeout = 3
 unfocused_hollow = false
@@ -31,5 +29,5 @@ hide_when_typing = true
 [keyboard]
 bindings = [
   # Open a new instance in cwd 
-  { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" }
+  { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" },
 ]

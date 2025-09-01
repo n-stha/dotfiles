@@ -85,3 +85,9 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /home/ns/.dart-cli-completion/zsh-config.zsh ]] && . /home/ns/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
