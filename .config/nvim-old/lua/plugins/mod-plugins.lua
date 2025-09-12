@@ -1,11 +1,10 @@
 return {
-  { "ellisonleao/gruvbox.nvim" },
+  { "thedenisnikulin/vim-cyberpunk" },
 
-  -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = "vim-cyberpunk",
     },
   },
   {
