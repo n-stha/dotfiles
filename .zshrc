@@ -40,6 +40,7 @@ setopt sharehistory
 setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt hist_ignore_dups
+setopt correct
 #
 # #Match search with commands
 # bindkey '^n' history-search-forward
@@ -75,19 +76,3 @@ fi
 eval "$(starship init zsh)"
 eval "$(fzf --zsh)"
 pokemon-colorscripts -r --no-title
-
-
-# pnpm
-export PNPM_HOME="/home/ns/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
-
-
-## [Completion]
-## Completion scripts setup. Remove the following line to uninstall
-[[ -f /home/ns/.dart-cli-completion/zsh-config.zsh ]] && . /home/ns/.dart-cli-completion/zsh-config.zsh || true
-## [/Completion]
-
