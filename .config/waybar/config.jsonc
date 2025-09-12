@@ -40,7 +40,7 @@
   },
   "network": {
     "format-wifi": " 󰤨  {essid:.11} ",
-    "format-ethernet": " Wired ",
+    "format-ethernet": "   Wired ",
     "tooltip-format": "<span color='#d3869b'> 󰅧 </span>{bandwidthUpBytes}  <span color='#458588'> 󰅢 </span>{bandwidthDownBytes}",
     "format-linked": " 󱘖 {ifname} (No IP) ",
     "format-disconnected": "  Disconnected ",
