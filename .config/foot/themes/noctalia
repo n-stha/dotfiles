@@ -1,0 +1,24 @@
+[colors-dark]
+background = 291415
+foreground = f3f2f2
+
+selection-background = e3dd69
+selection-foreground = 251819
+
+regular0 = 371b1c
+regular1 = e3696f
+regular2 = e4686e
+regular3 = e3a069
+regular4 = e3dd69
+regular5 = ec9397
+regular6 = ebbb94
+regular7 = f3f2f2
+
+bright0  = b6afaf
+bright1  = e3696f
+bright2  = e4686e
+bright3  = e3a069
+bright4  = e3dd69
+bright5  = ec9397
+bright6  = ebbb94
+bright7  = f3f2f2
